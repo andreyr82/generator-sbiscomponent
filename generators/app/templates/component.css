@@ -1,0 +1,3 @@
+.<%= componentNamespace.replace('.','__') %> {
+
+}
