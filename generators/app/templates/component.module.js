@@ -1,5 +1,5 @@
 /**
- * Created by <%= authorName %> on 29.12.2015.
+ * Created by <%= authorName %> on <%= (new Date()).toLocaleDateString() %>.
  */
 
 define('js!SBIS3.<%= componentNamespace %>', [
