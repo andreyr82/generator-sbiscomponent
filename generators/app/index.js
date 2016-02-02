@@ -63,7 +63,7 @@ module.exports = yeoman.generators.Base.extend({
       this.destinationPath(this.props.componentName+'/'+this.props.componentName+'.module.js'),
       this.props
     );
-    if(this.props.resourceFolder === true) {
+    if(this.props.jsonFile === true) {
       this.templatePath('component.json'),
         this.destinationPath(this.props.componentName+'/'+this.props.componentName+'.json'),
         this.props
