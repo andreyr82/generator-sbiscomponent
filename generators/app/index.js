@@ -29,6 +29,11 @@ module.exports = yeoman.generators.Base.extend({
       default: 'somebody'
     },{
       type: 'confirm',
+      name: 'jsonFile',
+      message: 'Create json file: ',
+      default: false
+    },{
+      type: 'confirm',
       name: 'resourceFolder',
       message: 'Create resource folder: ',
       default: false
@@ -58,6 +63,11 @@ module.exports = yeoman.generators.Base.extend({
       this.destinationPath(this.props.componentName+'/'+this.props.componentName+'.module.js'),
       this.props
     );
+    if(this.props.resourceFolder === true) {
+      this.templatePath('component.json'),
+        this.destinationPath(this.props.componentName+'/'+this.props.componentName+'.json'),
+        this.props
+    }
     if(this.props.resourceFolder === true) {
       this.mkdir(this.props.componentName+'/resources');
     }
