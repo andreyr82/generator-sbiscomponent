@@ -5,7 +5,7 @@
 define('js!SBIS3.<%= componentNamespace %>', [
   'js!SBIS3.CORE.CompoundControl',
   'html!SBIS3.<%= componentNamespace %>',
-  'css!SBIS3.<%= componentNamespace %>'], function( CompoundControl, dotTplFn ) {
+  'css!SBIS3.<%= componentNamespace %>'], function (CompoundControl, dotTplFn) {
   /**
    * SBIS3.<%= componentNamespace %>
    * @class SBIS3.<%= componentNamespace %>
@@ -15,14 +15,12 @@ define('js!SBIS3.<%= componentNamespace %>', [
   var moduleClass = CompoundControl.extend(/** @lends SBIS3.<%= componentNamespace %> */{
     _dotTplFn: dotTplFn,
     $protected: {
-      _options: {
-
-      }
+      _options: {}
     },
-    $constructor: function() {
+    $constructor: function () {
     },
 
-    init: function() {
+    init: function () {
       moduleClass.superclass.init.call(this);
     }
   });

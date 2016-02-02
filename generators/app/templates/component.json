@@ -7,22 +7,7 @@
     "ws-config":{
       "title":"Базовая конфигурация",
       "options":{
-        "name": {
-          "title": "Имя компонента",
-          "type": "string"
-        },
-        "showTaxSettings": {
-          "title": "Показывать налоговые настройки",
-          "type": "boolean"
-        },
-        "autoOpenCountrySelect": {
-          "title": "Открывать выбор страны при выборе Иностранный гражданин",
-          "type": "boolean"
-        },
-        "fieldsPrefix": {
-          "title": "Префикс полей контекста",
-          "type": "string"
-        }
+ 
       }
     }
   }
