@@ -15,7 +15,9 @@ define('js!SBIS3.<%= componentNamespace %>', [
   var moduleClass = CompoundControl.extend(/** @lends SBIS3.<%= componentNamespace %> */{
     _dotTplFn: dotTplFn,
     $protected: {
-      _options: {}
+      _options: {
+
+      }
     },
     $constructor: function () {
     },
