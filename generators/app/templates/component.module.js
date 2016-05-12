@@ -3,13 +3,13 @@
  */
 
 define('js!SBIS3.<%= componentNamespace %>', [
-  'js!SBIS3.CORE.CompoundControl',
+  'js!SBIS3.CONTROLS.CompoundControl',
   'html!SBIS3.<%= componentNamespace %>',
   'css!SBIS3.<%= componentNamespace %>'], function (CompoundControl, dotTplFn) {
   /**
    * SBIS3.<%= componentNamespace %>
    * @class SBIS3.<%= componentNamespace %>
-   * @extends $ws.proto.CompoundControl
+   * @extends SBIS3.CONTROLS.CompoundControl
    * @control
    */
   var moduleClass = CompoundControl.extend(/** @lends SBIS3.<%= componentNamespace %> */{

@@ -21,7 +21,7 @@ module.exports = yeoman.generators.Base.extend({
       type: 'value',
       name: 'componentNamespace',
       message: 'Enter the namespase of the component: SBIS3.',
-      default: 'CORE.Component'
+      default: 'CONTROLS.Component'
     },{
       type: 'value',
       name: 'authorName',
